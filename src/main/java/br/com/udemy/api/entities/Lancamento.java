@@ -41,10 +41,10 @@ public class Lancamento implements Serializable {
 	@Column(name = "data", nullable = false)
 	private Date data;	
 	
-	@Column(name = "dataCriacao", nullable = false)
+	@Column(name = "data_criacao", nullable = false)
 	private Date dataCriacao;	
 	
-	@Column(name = "data", nullable = false)
+	@Column(name = "data_atualizacao", nullable = false)
 	private Date dataAtualizacao;
 	
 	@Enumerated(EnumType.STRING)
