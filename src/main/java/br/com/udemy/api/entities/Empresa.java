@@ -58,8 +58,7 @@ public class Empresa implements Serializable {
 		final Date atual = new Date();
 		dataCriacao = atual;
 		dataAtualizacao = atual;
-	}
-	
+	}	
 	
 
 	public Long getId() {
