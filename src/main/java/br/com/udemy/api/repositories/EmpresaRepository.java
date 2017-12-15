@@ -6,6 +6,6 @@ import br.com.udemy.api.entities.Empresa;
 
 public interface EmpresaRepository extends JpaRepository<Empresa, Long> {
 	
-	Empresa findByCnpj(String cnpj);
+	Empresa findByCnpj(String cnpj); // Busca uma empresa pelo CNPJ.
 
 }
