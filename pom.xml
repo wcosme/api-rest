@@ -59,11 +59,12 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>		
+				
 		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>		
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			</dependency>
+				
 	</dependencies>
 
 	<build>
