@@ -49,15 +49,17 @@ public class ApiApplication {
 			empresas.forEach(System.out::println);
 			
 			Empresa empresaDB = repository.findOne(1L);
-			System.out.println("Empresa por ID: " + empresaDB);
-			
-			empresaDB.setRazaoSocial("Udemy Web");
-			this.repository.save(empresaDB);
+			if(empresaDB != null) {
+				System.out.println("Empresa por ID: " + empresaDB);
+				
+				empresaDB.setRazaoSocial("Udemy Web");
+				this.repository.save(empresaDB);
+			}			
 			
 			Empresa empresaCNPJ = repository.findByCnpj("12345678912345");
 			System.out.println("Empresa por ID: " + empresaCNPJ);
 			
-			this.repository.delete(1L);
+			this.repository.delete(empresaCNPJ);
 			
 			empresas = repository.findAll();
 			System.out.println("Empresas " + empresas.size());
